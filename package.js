@@ -10,8 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom('1.0');
   api.export('Moniker');
-  api.addFiles('.npm/package/node_modules/moniker/lib/moniker.js', ['client']);
   api.addFiles('lib/moniker.js', 'server');
 });
